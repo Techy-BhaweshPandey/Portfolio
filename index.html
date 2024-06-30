@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(20, 20, 91);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 28px;
+        }
+
+        .left {
+            word-spacing: 1cqmax;
+        }
+
+        .left h1 {
+            margin-bottom: 58%;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0px;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 30px, 0;
+        }
+
+        .rightSection img {
+
+            width: 116%;
+            height: fit-content;
+            margin: 60px, 0;
+            margin-bottom: 20px;
+        }
+
+        .Black {
+            color: brown;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(132, 7, 51);
+            color: lightcoral;
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #1b14a4;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 72vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 135px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 70px;
+            width: 150px;
+            font-size: 14px;
+            color: rgb(20, 149, 235);
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 68px;
+            color: azure;
+            width: 150px;
+            font-size: 16px;
+        }
+
+        .image-top {
+            width: 32px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin-top: 140px;
+            margin-left: 152px;
+
+        }
+
+        .thirdSection .box {
+            background: white;
+            width: 72vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .thirdSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 135px;
+        }
+
+        .vertical-title1 {
+            position: relative;
+            top: 94px;
+            width: 150px;
+            font-size: 14px;
+            color: rgb(20, 149, 235);
+
+        }
+
+        .vertical-desc1 {
+            position: relative;
+            top: 90px;
+            color: azure;
+            width: 150px;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-style: oblique;
+            text-align: center;
+            justify-content: space-around;
+            text-shadow: 0 0 60px rgb(7, 5, 5);
+            box-shadow: indigo;
+            background: linear-gradient(to right, red, blue);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: anime 1s infinite alternate;
+            margin-top: 280px;
+        }
+
+        @keyframes anime {
+            100% {
+                text-shadow: 0 0 60px rgba(33, 17, 203, 0.241);
+            }
+        }
+
+        .FourthSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        footer {
+            background-color: rgb(53, 4, 82);
+            height: 400px;
+            margin-top: 460px;
+        }
+
+        .footer {
+            display: flex;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-style: italic;
+
+        }
+
+        .footer2 ul li {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            justify-content: space-around;
+            padding: 16px 122px;
+            align-items: center;
+            font-style: bold;
+            color: white;
+        }
+
+        .footer3 ul li {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            justify-content: space-evenly;
+            padding: 16px 122px;
+            align-items: center;
+            font-style: bold;
+            color: white;
+        }
+
+        .footer4 ul li {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            justify-content: space-evenly;
+            padding: 16px 122px;
+            align-items: center;
+            color: white;
+            font-style: bold;
+        }
+
+        .footer>div {
+            width: 220px;
+        }
+
+        button {
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: antiquewhite;
+            text-transform: uppercase;
+            cursor: pointer;
+            width: 78%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h1>BHAWESH PORTFOLIO</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li> <a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Project </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstSection">
+            <div class="leftSection">Hi Eveyone
+                <div>My name is <span class="Black">Bhawesh</span></div>
+                <div>I'm a Web Developer</div>
+                <button>Download CV</button>
+            </div>
+            <div class="rightSection"><img src="com.png"></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="hc.jpg">
+                    <div class="vertical-title">
+                        <h3>Front End Developer(HTML-CSS)</h3>
+                    </div>
+                    <div class="vertical-desc">
+                        "Created Many Static Websites during learning tenure"
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="j.jpg">
+                    <div class="vertical-title">
+                        <h3> Java-Standard Application Developer</h3>
+                    </div>
+                    <div class="vertical-desc">
+                        Created a project on "Desktop Application"
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="j.jpg">
+                    <div class="vertical-title">
+                        <h3>Java-Enterprise Developer</h3>
+                    </div>
+                    <div class="vertical-desc">
+                        Created a project on "Office Manager Website"
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="h.jpg">
+                    <div class="vertical-title">
+                        <h3>Spring MVC and Hibernate</h3>
+                    </div>
+                    <div class="vertical-desc">
+                        "Working on Project"
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br><br>
+        <section class="thirdSection">
+            <h1>Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title1">
+                        <h3>"Attendance Automation"</h3>
+                    </div>
+                    <div class="vertical-desc1">
+                        "Using Java Swing"
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title1">
+                        <h3>"Inventory <br>System"</h3>
+                    </div>
+
+                    <div class="vertical-desc1">
+                        "Using Java Swing"
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title1">
+                        <h3>"Office Manager"</h3>
+                    </div>
+                    <div class="vertical-desc1">
+                        "Using Java Servlet and JSP"
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title1">
+                        <h3>Working on "Parking Allocation Website"</h3>
+                    </div>
+                    <div class="vertical-desc1">
+                        "Using HTML,CSS,JavaScript"
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="FourthSection">
+            <h1>About Me</h1>
+            <br>
+            <h2>Passionate Developer,A fast learner and curious to know about the new technology and new development in
+                our fields</h2>
+            <br>
+            <br>
+            <center>
+                <h2 style="color:whitesmoke">Interest areas</h2>
+            </center>
+            <br>
+            <br>
+            <ul>
+                <li style="font-size:28px">Web Developement</li>
+                <br>
+                <li style="font-size:28px">Java Development</li>
+            </ul>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h2 style="color:rgb(36, 64, 189)">Bhawesh Portfolio</h2>
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
